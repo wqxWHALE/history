@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="css/style.css"  rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script src="js/login.js"></script>
+<title>北理故事</title>
+<script type="text/javascript">
+
+ function check(){
+   if($('#userId').val()==""){
+     alert("学号不能为空！");
+     return false;
+   }
+   if($('#pwd').val()=="")
+     alert("密码不能为空！");
+     return false;
+   }
+   if($('#userId').val()=="admin"&&$('#userId').val()=="admin"){
+     $("#login-bg").fadeOut(1000);
+     $("#login").fadeOut(1000);
+   }
+ }
+</script>
+</head>
+<body>
+
+<div id="login-bg"></div>
+<div id="login">
+  <div class="login-box">
+    <div class="logo">
+      <img src="images/LOGO.png">
+      <div style="padding:4px 0px 10px;">找回你的北理记忆</div>
+    </div>
+    <form>
+      <div class="input-box">
+        <div class="input-row">
+          <input id="userId" type="text" placeholder="学号">
+        </div>
+        <div class="input-row">
+          <input id="pwd" type="password" placeholder="密码">
+        </div>
+        <input type="submit" onclick="return check()" style="visibility:hidden;">
+      </div>
+  </form>
+  </div>
+</div>
+</body>
+</html>

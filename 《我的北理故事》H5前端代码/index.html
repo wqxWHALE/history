@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="css/style.css"  rel="stylesheet" type="text/css" media="all">
+<link href="css/cycle.css"  rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script src="js/TouchSlide-1.1.min.js"></script>
+<script src="js/main.js"></script>
+<title>北理故事</title>
+<script type="text/javascript">
+
+ function waitShow(){
+   setTimeout(function(){
+     $("#wait").fadeOut(1000);
+   }, 1500);
+ }
+
+function initSlide(){
+  TouchSlide({
+    slideCell:"#slideBox",
+    titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+    mainCell:".bd ul",
+    effect:"left",
+    autoPage:true,//自动分页
+    autoPlay:false //自动播放
+  });
+}
+
+window.onload=function(){
+    waitShow();
+    initSlide();
+  }
+</script>
+</head>
+<body>
+
+<div class="all">
+<div id="wait">
+  <div class="cycle-box">
+    <div class="cycle">
+  <div class="">
+    <div class="seat">
+      <span></span>
+    </div>
+    <div class="center-frame"></div>
+    <div class="top-frame"></div>
+    <div class="front-wheel-frame"></div>
+    <div class="handlebar-front"></div>
+    <div class="handlebar-curve"></div>
+    <div class="back-frame"></div>
+		<div class="bottom-frame"></div>
+    <div class="front-frame"></div>
+    <div class="outer-axle"></div>
+		<div class="chain-disc-inner"></div>
+    <div class="chain-rods">
+			<div class="pedal-rod"></div>
+		</div>
+
+    <div class="cycle-wheel-outer-back">
+				<div class="cycle-wheel-inner">
+					<div class="cycle-wheel-inner-padding">
+						<ul class="spoke-container">
+							<li class="spoke"></li>
+							<li class="spoke"></li>
+						</ul>
+						<div class="inner-disc"></div>
+						<div class="inner-disc-2"></div>
+					</div>
+				</div>
+			</div>
+
+      <div class="chain-up"></div>
+		<div class="chain-bottom"></div>
+
+      <div class="cycle-wheel-outer-front">
+  				<div class="cycle-wheel-inner">
+  					<div class="cycle-wheel-inner-padding">
+  						<ul class="spoke-container">
+  							<li class="spoke"></li>
+  							<li class="spoke"></li>
+  						</ul>
+  						<div class="inner-disc"></div>
+  						<div class="inner-disc-2"></div>
+  					</div>
+  				</div>
+  			</div>
+
+  </div>
+</div>
+<div class="wait-font">加载中...</div>
+  </div>
+
+</div>
+
+
+<div id="main">
+<div class="container">
+
+  <div id="slideBox" class="slideBox">
+
+  		<div class="bd">
+  			<ul id="tran">
+  			<!----><li class="li-01">
+  						<a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/01b.png">
+                <div class="img-box"><img src="images/01.jpg"></div>
+                </div>
+                <div class="img01-text01"><div class="newST" style="text-align:right;">我的大学</div><div class="newST" style="text-align:right;">在这里开始</div></div>
+                <div class="img01-text02"><div style="text-align:left">2012.9</div><div style="text-align:left">佛山»珠海</div></div>
+              </a>
+  					</li>
+            <!--宿舍有四种类型-->
+            <!--栋数：24  25  34  35  39  40  41-->
+  		        <!--<li class="li-02 li-0201">
+  						<a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0201b.png">
+                <div class="img-box"><img src="images/0201.jpg"></div>
+                </div>
+                <div class="img02-text01"><div class="newST">千山万水挡不住</div><div class="newST">与你相伴三四年</div></div>
+                <div class="img02-tx">
+                  <span><img src="images/tx01.png"></span>
+                  <span><img src="images/tx03.png"></span>
+                  <span><img src="images/tx04.png"></span>
+                  <span><img src="images/tx05.png"></span>
+                  <span><img src="images/tx06.png"></span>
+                </div>
+                <div class="img02-text02"><span>陈志恒</span><span>练海林</span><span>毛俊杰</span><span>梁志华</span><span>陈柏诺</span></div>
+              </a>
+  					</li>-->
+
+            <!---栋数：30  33  36  38-->
+  		<!--	<li class="li-02 li-0202">
+  						<a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0202b.png">
+                <div class="img-box"><img src="images/0202.png"></div>
+                </div>
+                <div class="img02-text01"><div class="newST">千山万水挡不住</div><div class="newST">与你相伴三四年</div></div>
+                <div class="img02-tx">
+                  <span><img src="images/tx01.png"></span>
+                  <span><img src="images/tx03.png"></span>
+                  <span><img src="images/tx04.png"></span>
+                  <span><img src="images/tx05.png"></span>
+                  <span><img src="images/tx06.png"></span>
+                </div>
+                <div class="img02-text02"><span>陈志恒</span><span>练海林</span><span>毛俊杰</span><span>梁志华</span><span>陈柏诺</span></div>
+              </a>
+  					</li>-->
+
+            <!--栋数：21  22  23  26  29  31  32  37-->
+  		<!--	<li class="li-02 li-0203">
+  						<a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0203b.png">
+                <div class="img-box"><img src="images/0203.png"></div>
+                </div>
+                <div class="img02-text01"><div class="newST">千山万水挡不住</div><div class="newST">与你相伴三四年</div></div>
+                <div class="img02-tx">
+                  <span><img src="images/tx01.png"></span>
+                  <span><img src="images/tx03.png"></span>
+                  <span><img src="images/tx04.png"></span>
+                  <span><img src="images/tx05.png"></span>
+                  <span><img src="images/tx06.png"></span>
+                </div>
+                <div class="img02-text02"><span>陈志恒</span><span>练海林</span><span>毛俊杰</span><span>梁志华</span><span>陈柏诺</span></div>
+              </a>
+  					</li>-->
+
+            <!--栋数：1-20-->
+  			    <li class="li-02 li-0204">
+  						<a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0204b.png">
+                <div class="img-box"><img src="images/0204.png"></div>
+                </div>
+                <div class="img02-text01"><div class="newST">千山万水挡不住</div><div class="newST">与你相伴三四年</div></div>
+                <div class="img02-tx">
+                  <span><img src="images/tx01.png"></span>
+                  <span><img src="images/tx03.png"></span>
+                  <span><img src="images/tx04.png"></span>
+                  <span><img src="images/tx05.png"></span>
+                  <span><img src="images/tx06.png"></span>
+                </div>
+                <div class="img02-text02"><span>李翠怡</span><span>王思虹</span><span>严秀莲</span><span>伍淑君</span><span>刘梦欣</span></div>
+              </a>
+  					</li>
+
+
+
+
+            <!--军训有两种类型-->
+            <!--男
+  					<li class="li-03 li-0301">
+  						<a class="pic" href="#">
+                <div class="li-img-box">
+                <img class="fullWin" src="images/0301b.jpg">
+                <img style="z-index:10;position:absolute;top:0;left:0;right:0" src="images/03b.png">
+                <div class="img-box img-box-li-03"><img class="start-move" src="images/0301.png"></div>
+                </div>
+                <div class="img03-text01"><div class="newST" style="text-align:right;">男孩的成长</div><div class="newST" style="text-align:right;">在军训的烈日下</div></div>
+                <div class="img03-text02"><div style="text-align:right;">将汗水挥洒在操场上,用歌声澎湃校园</div><div style="text-align:right;">2013.3军训</div></div>
+              </a>
+  					</li>-->
+
+
+            <!--女-->
+  					<li class="li-03 li-0302">
+  						<a class="pic" href="#">
+                <div class="li-img-box">
+                <img class="fullWin" src="images/0302b.jpg">
+                <img  style="z-index:10;position:absolute;top:0;left:0;right:0;" src="images/03b.png">
+                <div class="img-box img-box-li-03"><img class="start-move" src="images/0302.png"></div>
+                </div>
+                <div class="img03-text01"><div class="newST" style="text-align:right;">女孩的坚强</div><div class="newST" style="text-align:right;">是不放弃的英姿飒爽</div></div>
+                <div class="img03-text02"><div style="text-align:right;">将汗水挥洒在操场上,用歌声澎湃校园</div><div style="text-align:right;">2013.3军训</div></div>
+              </a>
+  					</li>
+
+
+            <!--上课最多教学楼-->
+            <!--明德楼
+            <li class="li-04 li-0401">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0401b.png">
+                <div class="img-box"><img src="images/0401.png"></div>
+                </div>
+                <div class="img04-text02">
+                  <div>明德楼<span class="b">126</span><span class="s">课时</span></div>
+                  <div>弘毅楼<span class="b">386</span><span class="s">课时</span></div>
+                  <div>天佑楼<span class="b">588</span><span class="s">课时</span></div>
+              </div>
+                <div class="img04-text01"><div class="newST" style="text-align:left">追梦北理</div><div class="newST" style="text-align:left">风华正当时</div></div>
+              </a>
+            </li>-->
+
+
+            <!---弘毅楼
+            <li class="li-04 li-0402">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img class="fullWin" src="images/0402bb.jpg">
+                <img style="z-index:10;position:absolute;top:0;left:0;right:0" src="images/0402b.png">
+                <div class="img-box"><img src="images/0402.png"></div>
+                </div>
+                <div class="img04-text02">
+                  <div>明德楼<span class="b">126</span><span class="s">课时</span></div>
+                  <div>弘毅楼<span class="b">386</span><span class="s">课时</span></div>
+                  <div>天佑楼<span class="b">588</span><span class="s">课时</span></div>
+              </div>
+                <div class="img04-text01"><div class="newST" style="text-align:left">追梦北理</div><div class="newST" style="text-align:left">风华正当时</div></div>
+              </a>
+            </li>-->
+
+            <!---天佑楼
+            <li class="li-04 li-0403">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0403b.png">
+                <div class="img-box"><img src="images/0403.png"></div>
+                </div>
+                <div class="img04-text02">
+                  <div>明德楼<span class="b">126</span><span class="s">课时</span></div>
+                  <div>弘毅楼<span class="b">386</span><span class="s">课时</span></div>
+                  <div>天佑楼<span class="b">588</span><span class="s">课时</span></div>
+              </div>
+                <div class="img04-text01"><div class="newST" style="text-align:left">追梦北理</div><div class="newST" style="text-align:left">风华正当时</div></div>
+              </a>
+            </li>-->
+
+            <!--艺悦楼
+            <li class="li-04 li-0404">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0404b.png">
+                <div class="img-box"><img src="images/0404.png"></div>
+                </div>
+                <div class="img04-text02">
+                  <div>明德楼<span class="b">126</span><span class="s">课时</span></div>
+                  <div>弘毅楼<span class="b">386</span><span class="s">课时</span></div>
+                  <div>天佑楼<span class="b">588</span><span class="s">课时</span></div>
+              </div>
+                <div class="img04-text01"><div class="newST" style="text-align:left">追梦北理</div><div class="newST" style="text-align:left">风华正当时</div></div>
+              </a>
+            </li>-->
+
+            <!--知行楼-->
+            <li class="li-04 li-0405">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0405b.png">
+                <div class="img-box"><img src="images/0405.png"></div>
+                </div>
+                <div class="img04-text02">
+                  <div>知行楼<span class="b">588</span><span class="s">课时</span></div>
+                  <div>明德楼<span class="b">126</span><span class="s">课时</span></div>
+                  <div>弘毅楼<span class="b">386</span><span class="s">课时</span></div>
+              </div>
+                <div class="img04-text01"><div class="newST" style="text-align:left">追梦北理</div><div class="newST" style="text-align:left">风华正当时</div></div>
+              </a>
+            </li>
+
+
+            <!--求是楼
+            <li class="li-04 li-0406">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0406b.png">
+                <div class="img-box"><img src="images/0406.png"></div>
+                </div>
+                <div class="img04-text02">
+                  <div>明德楼<span class="b">126</span><span class="s">课时</span></div>
+                  <div>弘毅楼<span class="b">386</span><span class="s">课时</span></div>
+                  <div>天佑楼<span class="b">588</span><span class="s">课时</span></div>
+              </div>
+                <div class="img04-text01"><div class="newST" style="text-align:left">追梦北理</div><div class="newST" style="text-align:left">风华正当时</div></div>
+              </a>
+            </li>-->
+
+
+
+
+            <!---绩点3.5以上-->
+            <li class="li-05 li-0501">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0501b.png">
+                <div class="img-box"><img src="images/0501.png"></div>
+                </div>
+                <div class="img05-text02">
+                  <div style="text-align:right">成绩</div>
+                  <div style="text-align:right">有低谷，英语<span class="b">65</span><span class="s">分</span></div>
+                  <div style="text-align:right">有高峰，板式设计<span class="b">92</span><span class="s">分</span></div>
+                  <div style="text-align:right">GPA<span class="b">4.0</span></div>
+                  <div style="text-align:right">学霸之友</div>
+                </div>
+                <div class="img05-text01"><div class="newST" style="text-align:left">不怕学神挡我金</div><div class="newST" style="text-align:left">挤进馆里充电忙</div></div>
+              </a>
+            </li>
+
+            <!---体育好的
+            <li class="li-05 li-0502">
+                <a class="pic" href="#">
+                  <div class="li-img-box">
+                  <img src="images/0502b.png">
+                  <div class="img-box"><img src="images/0502.png"></div>
+                  </div>
+                  <div class="img05-text02"><div style="text-align:left">体育92分</div><div style="text-align:left">篮球93分</div><div style="text-align:left">轮滑94分</div></div>
+                  <div class="img05-text01"><div class="newST" style="text-align:right">积累实力</div><div class="newST" style="text-align:right">追梦北理&nbsp风华正当时</div></div>
+                </a>
+              </li>-->
+
+
+            <!--学习普通的
+            <li class="li-05 li-0503">
+        						<a class="pic" href="#">
+                      <div class="li-img-box">
+                      <img src="images/0503b.png">
+                      <div class="img-box"><img src="images/0503.png"></div>
+                      </div>
+                <div class="img05-text02"><div style="text-align:right">看书、煲剧、游戏</div><div style="text-align:right">也可以是大学生活</div></div>
+                <div class="img05-text01"><div class="newST" style="text-align:left">宿舍很惬意</div><div class="newST" style="text-align:left">而我正好有空</div></div>
+              </a>
+            </li>-->
+
+
+        <!----><li class="li-06">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/06b.png">
+                <div class="img-box"><img src="images/06.png"></div>
+                </div>
+                <div class="img06-text02">
+                  <div style="text-align:left">我的快递<span class="b">25</span><span class="s">件</span></div>
+                  <div style="text-align:left">超越全校<span class="b">22.5%</span><span class="s">的人</span></div>
+                  <div style="margin-top:10px;text-align:left">江湖人称：<span>省钱能手</span></div></div>
+                <div class="img06-text01"><div class="newST" style="text-align:left">达人不在淘宝</div><div class="newST" style="text-align:left">数量不是英雄</div></div>
+              </a>
+            </li>
+
+
+            <!---大四
+            <li class="li-07">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0701b.png">
+                <div class="img-box"><img src="images/0701.png"></div>
+                </div>
+                <div class="img07-text02">
+                  <div class="img07-text0201">
+                    <div style="text-align:left">亲爱的<span>达峰</span>同学</div>
+                  </div>
+                  <div class="img07-text0202">
+                    <div style="text-align:left">截止<span>2016.5.22</span></div>
+                  </div>
+                  <div class="img07-text0203">
+                    <div style="text-align:left">你的大学已度过<span>1277</span>天</div>
+                  </div>
+                  <div class="img07-text0204">
+                  <div style="text-align:left">剩余<span>183</span>天</div></div>
+                </div>
+                <div class="img07-text01"><div class="newST" style="text-align:right">这座城</div><div class="newST" style="text-align:right">写满我们欢笑的回忆</div><div class="newST" style="text-align:right">这些路</div><div class="newST" style="text-align:right">留下我们行走的印记</div></div>
+              </a>
+            </li>-->
+
+            <!---大三-->
+            <li class="li-07">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0701b.png">
+                <div class="img-box"><img src="images/0702.png"></div>
+                </div>
+                <div class="img07-text02">
+                  <div class="img07-text0201">
+                    <div style="text-align:left">亲爱的<span>eva</span>同学</div>
+                  </div>
+                  <div class="img07-text0202">
+                    <div style="text-align:left">截止<span>2016.5.22</span></div>
+                  </div>
+                  <div class="img07-text0203">
+                    <div style="text-align:left">你的大学已度过<span>1277</span>天</div>
+                  </div>
+                  <div class="img07-text0204">
+                  <div style="text-align:left">剩余<span>183</span>天</div></div>
+                </div>
+                <div class="img07-text01"><div class="newST" style="text-align:right">这座城</div><div class="newST" style="text-align:right">写满我们欢笑的回忆</div><div class="newST" style="text-align:right">这些路</div><div class="newST" style="text-align:right">留下我们行走的印记</div></div>
+              </a>
+            </li>
+
+            <!---大二
+            <li class="li-07">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0701b.png">
+                <div class="img-box"><img src="images/0703.png"></div>
+                </div>
+                <div class="img07-text02">
+                  <div class="img07-text0201">
+                    <div style="text-align:left">亲爱的<span>达峰</span>同学</div>
+                  </div>
+                  <div class="img07-text0202">
+                    <div style="text-align:left">截止<span>2016.5.22</span></div>
+                  </div>
+                  <div class="img07-text0203">
+                    <div style="text-align:left">你的大学已度过<span>1277</span>天</div>
+                  </div>
+                  <div class="img07-text0204">
+                  <div style="text-align:left">剩余<span>183</span>天</div></div>
+                </div>
+                <div class="img07-text01"><div class="newST" style="text-align:right">这座城</div><div class="newST" style="text-align:right">写满我们欢笑的回忆</div><div class="newST" style="text-align:right">这些路</div><div class="newST" style="text-align:right">留下我们行走的印记</div></div>
+              </a>
+            </li>-->
+
+            <!--大一
+            <li class="li-07">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0701b.png">
+                <div class="img-box"><img src="images/0704.png"></div>
+                </div>
+                <div class="img07-text02">
+                  <div class="img07-text0201">
+                    <div style="text-align:left">亲爱的<span>达峰</span>同学</div>
+                  </div>
+                  <div class="img07-text0202">
+                    <div style="text-align:left">截止<span>2016.5.22</span></div>
+                  </div>
+                  <div class="img07-text0203">
+                    <div style="text-align:left">你的大学已度过<span>1277</span>天</div>
+                  </div>
+                  <div class="img07-text0204">
+                  <div style="text-align:left">剩余<span>183</span>天</div></div>
+                </div>
+                <div class="img07-text01"><div class="newST" style="text-align:right">这座城</div><div class="newST" style="text-align:right">写满我们欢笑的回忆</div><div class="newST" style="text-align:right">这些路</div><div class="newST" style="text-align:right">留下我们行走的印记</div></div>
+              </a>
+            </li>-->
+
+            <!--明德楼：文法
+            <li class="li-08 li-0401">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0401b.png">
+                <div class="img-box"><img src="images/0401.png"></div>
+                </div>-->
+                <!--大一
+                <div class="img08-text01"><div class="newST" style="text-align:left">青春不惧</div><div class="newST" style="text-align:left">勇敢尝试</div></div>
+                -->
+                <!--大二
+                <div class="img08-text01"><div class="newST" style="text-align:left">初心不改</div><div class="newST" style="text-align:left">让人热血澎湃</div></div>
+                -->
+                <!--大三
+                <div class="img08-text01"><div class="newST" style="text-align:left">一梦三四年</div><div class="newST" style="text-align:left">且行且珍惜</div></div>
+
+              </a>
+            </li>-->
+
+            <!---弘毅楼：商学院-->
+            <li class="li-08 li-0402">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0402b.png">
+                <div class="img-box"><img src="images/0402.png"></div>
+                </div>
+                <!--大一-->
+                <div class="img08-text01"><div class="newST" style="text-align:left">青春不惧</div><div class="newST" style="text-align:left">勇敢尝试</div></div>
+
+                <!--大二
+                <div class="img08-text01"><div class="newST" style="text-align:left">初心不改</div><div class="newST" style="text-align:left">让人热血澎湃</div></div>
+                -->
+                <!--大三
+                <div class="img08-text01"><div class="newST" style="text-align:left">一梦三四年</div><div class="newST" style="text-align:left">且行且珍惜</div></div>
+-               -->
+              </a>
+            </li>
+
+
+            <!---天佑楼：航空
+            <li class="li-08 li-0403">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0403b.png">
+                <div class="img-box"><img src="images/0403.png"></div>
+                </div>-->
+                <!--大一
+                <div class="img08-text01"><div class="newST" style="text-align:left">青春不惧</div><div class="newST" style="text-align:left">勇敢尝试</div></div>
+                -->
+                <!--大二
+                <div class="img08-text01"><div class="newST" style="text-align:left">初心不改</div><div class="newST" style="text-align:left">让人热血澎湃</div></div>
+                -->
+                <!--大三
+                <div class="img08-text01"><div class="newST" style="text-align:left">一梦三四年</div><div class="newST" style="text-align:left">且行且珍惜</div></div>
+
+              </a>
+            </li>-->
+
+            <!---艺悦楼：艺术
+            <li class="li-08 li-0404">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0404b.png">
+                <div class="img-box"><img src="images/0404.png"></div>
+                </div>-->
+                <!--大一
+                <div class="img08-text01"><div class="newST" style="text-align:left">青春不惧</div><div class="newST" style="text-align:left">勇敢尝试</div></div>
+                -->
+                <!--大二
+                <div class="img08-text01"><div class="newST" style="text-align:left">初心不改</div><div class="newST" style="text-align:left">让人热血澎湃</div></div>
+                -->
+                <!--大三
+                <div class="img08-text01"><div class="newST" style="text-align:left">一梦三四年</div><div class="newST" style="text-align:left">且行且珍惜</div></div>
+
+              </a>
+            </li>-->
+
+            <!--知行楼：信息、计算机
+            <li class="li-08 li-0405">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0405b.png">
+                <div class="img-box"><img src="images/0405.png"></div>
+                </div>-->
+                <!--大一
+                <div class="img08-text01"><div class="newST" style="text-align:left">青春不惧</div><div class="newST" style="text-align:left">勇敢尝试</div></div>
+                -->
+                <!--大二
+                <div class="img08-text01"><div class="newST" style="text-align:left">初心不改</div><div class="newST" style="text-align:left">让人热血澎湃</div></div>
+                -->
+                <!--大三
+                <div class="img08-text01"><div class="newST" style="text-align:left">一梦三四年</div><div class="newST" style="text-align:left">且行且珍惜</div></div>
+
+              </a>
+            </li>-->
+
+            <!--求是楼
+            <li class="li-08 li-0406">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0406b.png">
+                <div class="img-box"><img src="images/0406.png"></div>
+                </div>-->
+                <!--大一
+                <div class="img08-text01"><div class="newST" style="text-align:left">青春不惧</div><div class="newST" style="text-align:left">勇敢尝试</div></div>
+                -->
+                <!--大二
+                <div class="img08-text01"><div class="newST" style="text-align:left">初心不改</div><div class="newST" style="text-align:left">让人热血澎湃</div></div>
+                -->
+                <!--大三
+                <div class="img08-text01"><div class="newST" style="text-align:left">一梦三四年</div><div class="newST" style="text-align:left">且行且珍惜</div></div>
+
+              </a>
+            </li>-->
+
+            <!---精工楼：机车
+            <li class="li-08 li-0407">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/0407b.png">
+                <div class="img-box"><img src="images/0407.png"></div>
+                </div>-->
+                <!--大一
+                <div class="img08-text01"><div class="newST" style="text-align:left">青春不惧</div><div class="newST" style="text-align:left">勇敢尝试</div></div>
+                -->
+                <!--大二
+                <div class="img08-text01"><div class="newST" style="text-align:left">初心不改</div><div class="newST" style="text-align:left">让人热血澎湃</div></div>
+                -->
+                <!--大三
+                <div class="img08-text01"><div class="newST" style="text-align:left">一梦三四年</div><div class="newST" style="text-align:left">且行且珍惜</div></div>
+
+              </a>
+            </li>-->
+
+            <!--大四
+            <li class="li-08 li-0801">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                  <div class="li-bg"></div>
+                <div class="img-box"><img src="images/0801.png"></div>
+                </div>
+                <div class="img08-text01"><div class="newST" style="text-align:left">从倾心到相识</div><div class="newST" style="text-align:left">我们四年路</div><div class="newST" style="text-align:left">只有欢笑没有愁</div></div>
+              </a>
+            </li>-->
+
+
+            <!--已毕业
+            <li class="li-08 li-0802">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                  <div class="li-bg"></div>
+                <div class="img-box"><img src="images/0802.png"></div>
+                </div>
+                <div class="img08-text01"><div class="newST" style="text-align:center">不言离别</div><div class="newST" style="text-align:center">不忘初心</div><div class="newST" style="text-align:center">回首再聚</div><div class="newST" style="text-align:center">依旧青春</div></div>
+              </a>
+            </li>-->
+
+            <li class="li-09">
+              <a class="pic" href="#">
+                <div class="li-img-box">
+                <img src="images/555.png">
+                <div class="img-box"><img src="images/666.png"></div>
+                </div>
+              </a>
+            </li>
+
+  			</ul>
+  		</div>
+
+  		<div class="hd">
+  			<ul></ul>
+  		</div>
+  	</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
