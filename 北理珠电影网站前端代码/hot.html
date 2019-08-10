@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/footer.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-func.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: 0}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -20}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+</head>
+	
+<body>
+
+
+<nav class="desktop"> 
+  
+  <div class="" style="float:left;margin-left:2%;">
+  		<img src="images/logo.png">
+  </div>
+ 
+ <div class="nav-right">
+ <div class="search">
+             <input type="text" placeholder="搜索影片" style="float:left;">
+             <a href="" style="width:30px;height:30px;float:left;display:block;"><img src="images/search.png" style="width:100%;"></a>  
+        </div>
+        
+   <ul class="nav-content clearfix">
+        <li id="magic-line"></li>
+        <li class="current-page upper"> <a href="/">有你网</a></li>
+        <li class="upper"><a href="/hzschoolnews/">有你校园事件</a></li>
+        <li class="upper"> <a class="drop-btn" href="/younituku/">有你图库</a></li>
+        <li class="upper"><a href="/dianyingzixun/">有你影院</a></li>
+        <li class="upper"> <a class="drop-btn" href="/baike/">有你百科</a></li>
+        <li class="upper"><a href="http://bbs.u.zhbit.com/">社区&游戏
+    </a></li>
+    <li class="upper"><a href="http://jf.zhbit.com/default/user-index.html">校园缴费</a></li>
+    <li class="upper"><a href="http://down.u.zhbit.com/">有你软件站</a></li>
+    <li class="upper"><a href="/community/">社团联盟网</a></li>
+    <li class="upper"><a href="/advise/">建议告诉我们</a></li>
+  </ul>
+  <!-- END --> 
+  </div>
+</nav>
+
+
+<div id="fwslider" class="callbacks_container">
+	<ul class="rslides-hot" style="height:350px;">
+    	<li class="rsli">
+        	<img style="margin-top:-150px" src="images/hot.jpg" alt="">
+        </li>
+        </ul>
+        </div>
+
+<div class="movie-hot">
+	<div class="movie-hot-left">
+    	<div class="movie-hot-center">
+        	<h1>蜘蛛侠</h1>
+            <ul>
+            	<li>地区：美国</li>
+                <li>时间：2002</li>
+            </ul>
+            
+            
+            <p>截至2014年，蜘蛛侠系列电影先后有6部，当中的主角蜘蛛侠是漫威公司出版漫画小说中的一个虚构超级英雄角
+色，自创建以来已经先后出现在5部电影中。第一部是1977年在哥伦比亚广播公司首播的电视电影《蜘蛛侠》，之后还在有海外的电影院进行放映，尼古拉斯·哈蒙德扮演蜘蛛侠，E·W·斯瓦克汉默执导。</p>
+
+			<div class="simple-show">
+                <div class="ul-box-left">
+                    <ul>
+                        <li>类型：动作 科幻</li>
+                        <li>出品公司：哥伦比亚电影公司 </li>
+                        <li>奖项：无</li>
+                        <li class="bnone">票房：1.39亿美元</li>
+                    </ul>
+                </div>
+                <div class="ul-box-right">
+                    <ul>
+                        <li>导演：E·W·斯瓦克汉默</li>
+                        <li>编剧：斯坦·李/Stan Lee、史蒂夫·迪特寇/Steve Ditko、大卫·凯普/David Koepp </li>
+                        <li class="bnone">主演：尼古拉斯哈蒙德，大卫怀特 </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="movie-hot-right">
+    	<div class="movie-hot-center">
+    		<div id="portfoliolist">
+		
+
+			<div class="hotmovie portfolio">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Visual Infography</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="hotmovie portfolio">
+				<div class="portfolio-wrapper">						
+					<img src="images/movie3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sonor's Design</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+            <div class="hotmovie portfolio">
+				<div class="portfolio-wrapper">						
+					<img src="images/movie3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sonor's Design</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+            
+            
+            <div class="hotmovie portfolio">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Visual Infography</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="hotmovie portfolio">
+				<div class="portfolio-wrapper">						
+					<img src="images/movie3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sonor's Design</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+            <div class="hotmovie portfolio">
+				<div class="portfolio-wrapper">						
+					<img src="images/movie3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sonor's Design</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+            <div class="hotmovie portfolio">
+				<div class="portfolio-wrapper">						
+					<img src="images/movie3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sonor's Design</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+            
+             
+            
+		</div>
+        </div>
+    </div>
+    		<h3>简介</h3>
+    		<p>基于蜘蛛侠拍摄电影的版权从1985年起几经转手，经过了多个制片公司和工作室，中途曾有机会由詹姆斯·卡梅伦执导但之后还是因法律上的麻烦而作罢，版权最终由索尼影视娱乐旗下的哥伦比亚电影公司获得。之后索尼公司请来漫画原著粉丝萨姆·莱米执导了蜘蛛侠系列电影三部曲，分别是2002年的《蜘蛛侠》，2004年的《蜘蛛侠2》和2007年的《蜘蛛侠3》。在这三部电影中，彼得·帕克（托比·马奎尔）与高中时期暗恋的玛丽·简·沃森（克斯汀·邓斯特）发展出一段感情，而身为蜘蛛侠，他也需要与绿魔（威廉·达福）、章鱼博士、沙人（托马斯·哈登·丘奇）和毒液（托弗·戈瑞斯）作战。</p>
+    
+			<p>按照原本的计划，这三部电影完成后还会有第四部甚至第五部继续推出，但由于莱米与制片公司存在的分歧，哥伦比亚电影公司之后宣布将由马克·韦布担任新导演重启这一系列，由安德鲁·加菲尔德扮演彼得·帕克，艾玛·斯通出演格温·斯黛茜，瑞斯·伊凡斯饰演大反派蜥蜴人。重启的电影将回到彼得·帕克发展出超能力的高中时代，片名为《超凡蜘蛛侠》，之后于2012年7月以3D和IMAX 3D两种形式上映，同样获得了评论票房双丰收的好成绩，其续集《超凡蜘蛛侠2》已于2014年上映。</p>
+			<p>·莱米拍摄的三部曲预算总计为5.97亿美元，全球票房收入则达近25亿美元；马克·韦布的《超凡蜘蛛侠》则收入了7.52亿美元。每一部电影都创下了数项票房纪录，且均能在美国电影票房排行总榜名列前50位，也是总票房最高系列电影的第10名。专业影评人对前两部电影有较为正面的评价，第三部则褒贬不一。四部电影均已发行DVD和蓝光影碟。</p>
+
+</div>
+
+
+
+<div id="footer">
+	<div class="container">
+    	<div class="foot_left">
+            <ul>
+                <li><a href="">有你网</a></li>
+                <li><a href="">有你软件</a></li>
+                <li><a href="">有你影院</a></li>
+                <li><a href="">有你图库</a></li>
+                <li><a href="">有你百科</a></li>
+                <li><a href="">有你文库</a></li>
+                <li><a href="">意见反馈</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+            
+           	 <h4>©2014-2015 Powered By：有你工作室北京理工大学珠海学院</h4>
+            
+        	
+            
+        </div>
+    	<div class="foot_right">
+        	<ul class="tt-wrapper">
+            	<li><a class="tt-sample" href=""><img alt="" src="images/weibo.png"><span><img src="images/younier.jpg" alt=""></span></a></li>
+                <li><a class="tt-sample" href=""><img alt="" src="images/qq.png"></a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>

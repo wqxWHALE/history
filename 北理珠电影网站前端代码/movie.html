@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/footer.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-func.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: 0}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -20}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+<style type="text/css">
+	html,body{height:100%;}
+</style>
+</head>
+	
+<body>
+
+
+<nav class="desktop" style="background:#333"> 
+  
+  <div class="" style="float:left;margin-left:2%;">
+  		<img src="images/logo.png">
+  </div>
+ 
+ <div class="nav-right">
+ <div class="search">
+             <input type="text" placeholder="搜索影片" style="float:left;">
+             <a href="" style="width:30px;height:30px;float:left;display:block;"><img src="images/search.png" style="width:100%;"></a>  
+        </div>
+        
+   <ul class="nav-content clearfix">
+        <li id="magic-line"></li>
+        <li class="current-page upper"> <a href="/">有你网</a></li>
+        <li class="upper"><a href="/hzschoolnews/">有你校园事件</a></li>
+        <li class="upper"> <a class="drop-btn" href="/younituku/">有你图库</a></li>
+        <li class="upper"><a href="/dianyingzixun/">有你影院</a></li>
+        <li class="upper"> <a class="drop-btn" href="/baike/">有你百科</a></li>
+        <li class="upper"><a href="http://bbs.u.zhbit.com/">社区&游戏
+    </a></li>
+    <li class="upper"><a href="http://jf.zhbit.com/default/user-index.html">校园缴费</a></li>
+    <li class="upper"><a href="http://down.u.zhbit.com/">有你软件站</a></li>
+    <li class="upper"><a href="/community/">社团联盟网</a></li>
+    <li class="upper"><a href="/advise/">建议告诉我们</a></li>
+  </ul>
+  <!-- END --> 
+  </div>
+</nav>
+
+
+
+<div class="movie-all">
+<div style="margin-top:100px;">	
+    <div class="ul-box">
+    <ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter="app card icon logo web">全部</span></li>
+			<li><span class="filter" data-filter="app">科幻</span></li>
+			<li><span class="filter" data-filter="card">喜剧</span></li>
+			<li><span class="filter" data-filter="icon">战争</span></li>
+			<li><span class="filter" data-filter="logo">爱情</span></li>
+			<li><span class="filter" data-filter="web">动作</span></li>
+		</ul>
+	</div>
+    
+		<div id="portfoliolist">
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<img src="images/movie1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">《X战警》</a>
+							<span class="text-category">类型：科幻</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Visual Infography</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="images/movie3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sonor's Design</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Typography Company</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+						
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+					<img src="images/movie5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Weatherette</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie6.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">BMF</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie7.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Techlion</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie8.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">KittyPic</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																							
+			
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie9.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Graph Plotting</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>														
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie10.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">QR Quick Response</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie11.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Mobi Sock</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie12.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Village Community Church</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+            
+            <div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="images/movie12.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Village Community Church</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>												
+			
+		</div>
+    
+</div>
+
+</div>
+
+<div id="footer">
+	<div class="container">
+    	<div class="foot_left">
+            <ul>
+                <li><a href="">有你网</a></li>
+                <li><a href="">有你软件</a></li>
+                <li><a href="">有你影院</a></li>
+                <li><a href="">有你图库</a></li>
+                <li><a href="">有你百科</a></li>
+                <li><a href="">有你文库</a></li>
+                <li><a href="">意见反馈</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+            
+           	 <h4>©2014-2015 Powered By：有你工作室北京理工大学珠海学院</h4>
+            
+        	
+            
+        </div>
+    	<div class="foot_right">
+        	<ul class="tt-wrapper">
+            	<li><a class="tt-sample" href=""><img alt="" src="images/weibo.png"><span><img src="images/younier.jpg" alt=""></span></a></li>
+                <li><a class="tt-sample" href=""><img alt="" src="images/qq.png"></a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>

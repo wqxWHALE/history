@@ -1,0 +1,126 @@
+#footer{
+	position:relative;
+	left:0px;
+	bottom:0px;
+	min-width:980px;
+	height:80px;
+	background:#333;
+}
+#footer .foot_left ul, .foot_right ul{
+	list-style-type:none;
+}
+#footer .foot_left ul li , #footer .foot_right ul li{
+	display:inline-block;
+}
+#footer .foot_left ul li{
+	padding:10px 10px;
+}
+#footer .foot_right ul li{
+	padding:15px 5px;
+}
+#footer .foot_left{
+	float:left;
+}
+#footer .foot_right{
+	float:right;
+}
+#footer .foot_left ul li a{
+	color:#CCC;
+	font-size:14px;
+}
+#footer .foot_left h4{
+	margin-top:7px;
+	padding:0px 10px 10px;
+	color:#CCC;
+	font-size:14px;
+	font-weight:normal;
+}
+#footer .foot_left ul li a:hover{
+	color:#FFF;
+}
+#footer .foot_right ul li a{
+	opacity: 0.5;
+	transition: opacity 0.2s ease 0s;
+}
+#footer .foot_right ul li a:hover{
+	opacity: 0.9;
+}
+
+.tt-wrapper{
+	padding:0px;	
+}
+.tt-wrapper li:first-child{
+	margin-left: 0;
+}
+.tt-wrapper li{
+	float: left;
+}
+.tt-wrapper li a{
+	display: block;
+	outline: none;
+	position: relative;
+	width:auto;
+}
+.tt-wrapper li .tt-sample{
+    background-position: 0px 0px;
+}
+
+.tt-wrapper li a span{
+	position:absolute;
+	text-transform:uppercase;
+	width: 150px;
+	height: auto;
+	line-height: 20px;
+	padding: 0px;
+	left: 17%;
+	margin-left: -64px;
+	font-weight: normal;	
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	border: 4px solid #FFF;
+	background:#FFF;
+	text-indent: 0px;
+	border-radius: 5px;
+	pointer-events: none;
+	bottom: 100px;
+	opacity: 0;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	z-index:100;
+}
+.tt-wrapper li a span img{
+	position:relative;
+	top:0;
+	left:0;
+	z-index:10;
+}
+.tt-wrapper li a span:before,
+.tt-wrapper li a span:after{
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	margin-left: -9px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid rgba(0,0,0,0.1);
+}
+.tt-wrapper li a span:after{
+	bottom: -14px;
+	margin-left: -10px;
+	border-top: 10px solid #FFF;
+}
+.tt-wrapper li a:hover span{
+	opacity: 0.9;
+	bottom: 55px;
+}
+.tt-sample span > img{
+	width:100%;
+}
