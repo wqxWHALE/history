@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>登录</title>
+</head>
+<body>
+<div id="login">
+    <div class="bg-ani wrap">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="wrapper-login-bg">
+        <div class="container">
+            <div class="login-box">
+                <div class="login-top">
+    <!--                <div class="login-head theme-color-oppo">登录</div>-->
+                </div>
+                <div class="login">
+                    <div class="input-name">
+                        <div class="input-data">
+                            <input type="text" value="" :placeholder="userNamePder" v-model="loginInfo.userName" :class="{'input-warn':userNamePder!=='USER NAME'}"/>
+                        </div>
+                    </div>
+
+                    <div class="input-password">
+                        <div class="input-data">
+                            <input type="password" value="" :placeholder="pwdPder" v-model="loginInfo.password"  :class="{'input-warn':pwdPder!=='PASSWORD'}"/>
+                        </div>
+                    </div>
+
+                    <div class="input-btn">
+                        <button class="btn btn-default" type="submit" @click="submit">LOGIN</button>
+                    </div>
+                </div><!---login-box--->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+    wqxWhale@2019技术支持
+    </div>
+</div>
+</body>
+</html>

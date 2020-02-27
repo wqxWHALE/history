@@ -1,0 +1,61 @@
+.layer-row{
+    overflow: hidden;
+}
+.layer-12,
+.layer-11,
+.layer-10,
+.layer-9,
+.layer-8,
+.layer-7,
+.layer-6,
+.layer-5,
+.layer-4,
+.layer-3,
+.layer-2,
+.layer-1{
+    float:left;
+    box-sizing: border-box;
+    padding:10px;
+    background:#fff;
+    line-height:36px;
+ }
+
+.layer-12{
+    width:100%;
+}
+.layer-11{
+    width: 91.66666667%;
+}
+.layer-10{
+    width: 83.33333333%;
+}
+.layer-9{
+    width: 75%;
+}
+.layer-8{
+    width: 66.66666667%;
+ }
+.layer-7{
+    width: 58.33333333%;
+}
+.layer-6{
+    width:50%;
+}
+.layer-5{
+    width: 41.66666667%;
+}
+.layer-4{
+    width: 33.33333333%;
+}
+.layer-3{
+    width: 25%;
+}
+.layer-2{
+    width: 16.66666667%;
+}
+.layer-1{
+    width: 8.33333333%;
+}
+
+
+

@@ -1,0 +1,114 @@
+/***********************
+theme 01
+************************/
+.theme-color{
+    background:#ff4946;
+    color:#fff;
+}
+.theme-color-oppo{
+    background:#fff;
+    color:#ff4946;
+}
+.theme-color-shadow,.router-link-exact-active>div{
+    background:#fff4f4
+}
+.theme-active{
+    color:#ff4946;
+    border:1px solid #ff4946;
+}
+.left-nav-style{
+    background:#FFFFFF;
+    color:#617581;
+}
+.left-nav a{
+    color:#617581;
+}
+.btn-default,
+.btn-info{
+    background: #FF6C60;
+    color: #fff;
+    border: 1px solid #FF6C60;
+}
+.btn-default-simple{
+    color:#FF6C60;
+    border-bottom: 3px solid #FF6C60;
+}
+
+.btn-danger{
+    background: #fff;
+    color: #FF6C60;
+    border: 1px solid #FF6C60;
+}
+
+.btn-common{
+    color:#fff;
+    background:#33CC99;
+    border:1px solid #33CC99;
+}
+.btn-common-simple{
+    color:#33CC99;
+    border-bottom:3px solid #33CC99;
+}
+
+/***********************
+theme 02
+************************/
+.theme-color{
+    background:#19B5FE;
+    color:#fff;
+}
+.theme-color-oppo{
+    background:#fff;
+    color:#19B5FE;
+}
+.theme-color-shadow,.router-link-exact-active>div{
+    background:#263444;
+}
+.theme-active{
+    color:#19B5FE;
+    border:1px solid #19B5FE;
+}
+.left-nav-style{
+    background:#304156;
+    color:#fff;
+}
+.left-nav a{
+    color:#fff;
+}
+.left-nav .li-tab-child-box{
+    background-color: #2b3a4d;
+}
+.btn-default,
+.btn-info{
+    background:#19B5FE;
+    color:#fff;
+    border: 1px solid #19B5FE;
+}
+.btn-default-simple{
+    color:#19B5FE;
+    border-bottom: 3px solid #19B5FE;
+}
+
+.btn-danger{
+    background: #FF6C60;
+    color: #fff;
+    border: 1px solid #FF6C60;
+}
+
+.btn-common{
+    color:#fff;
+    background:#33CC99;
+    border:1px solid #33CC99;
+}
+.btn-common-simple{
+    color:#33CC99;
+    border-bottom:3px solid #33CC99;
+}
+
+.bg-ani {
+    /*background: #19B5FE;#1AC0DA*/
+    background: -moz-linear-gradient(top, #304156 0%, #19B5FE 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #304156), color-stop(100%, #19B5FE));
+    background: -webkit-linear-gradient(top, #304156 0%, #19B5FE 100%);
+    background: -o-linear-gradient(top, #304156 0%, #19B5FE 100%);
+}
